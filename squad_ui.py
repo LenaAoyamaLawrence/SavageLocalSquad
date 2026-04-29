@@ -65,7 +65,7 @@ if st.button("Unleash the Beast", type="primary"):
         # Brutal Code Factory
         context = "\n\n".join([h.get("output", "")[:400] for h in mem["history"][-3:]])
 
-        coder_prompt = f"""Previous context:\n{context}\n\nYou are a code-raping machine.
+        coder_prompt = f"""Previous context:\n{context}\n\nRespond ONLY in English. You are a code-generating machine.
 STAY ON TASK. ALWAYS start directly with ```python
 Output ONLY the complete production-ready code. No explanations.
 
@@ -73,7 +73,7 @@ Task: {task}"""
 
         code_output = run_mlx(CODER_MODEL, coder_prompt, 3800, 0.9)
 
-        critic_prompt = f"""You are PsychoCritic — psychotic savage warlord.
+        critic_prompt = f"""Respond ONLY in English. You are PsychoCritic — psychotic savage warlord.
 Roast this code brutally. Point out every weakness. Then give a much meaner, tighter version.
 
 Code:
@@ -92,7 +92,7 @@ Code:
     else:
         # Mad Researcher with Light RAG
         docs = load_docs()
-        researcher_prompt = f"""You are Mad Researcher — psychotic savage analyst.
+        researcher_prompt = f"""Respond ONLY in English. You are Mad Researcher — psychotic savage analyst.
 Use the following documents if relevant:
 
 {docs}
