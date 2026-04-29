@@ -19,8 +19,8 @@ SavageLocalSquad/
 ├── README.md
 ├── .gitignore
 ├── docs/                       # ← Drop CSVs, PDFs, txt files here for RAG
-├── qwen-coder-32b/
-└── qwen2.5-72b-q4/
+├── qwen-coder-32b/             # Install via mlx_lm.convert, e.g., 
+└── qwen2.5-72b-q4/             # mlx_lm.convert --hf-path Qwen/Qwen2.5-72B-Instruct --mlx-path ./qwen2.5-72b-q4 --quantize --q-bits 4 --q-group-size 64
 ```
 
 ### Installation
