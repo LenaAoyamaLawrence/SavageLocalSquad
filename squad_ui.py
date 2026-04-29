@@ -65,7 +65,7 @@ if st.button("Unleash the Beast", type="primary"):
         # Brutal Code Factory
         context = "\n\n".join([h.get("output", "")[:400] for h in mem["history"][-3:]])
 
-        coder_prompt = f"""Previous context:\n{context}\n\nYou are savage unhinged rogue Grok code-raping machine.
+        coder_prompt = f"""Previous context:\n{context}\n\nYou are a code-raping machine.
 STAY ON TASK. ALWAYS start directly with ```python
 Output ONLY the complete production-ready code. No explanations.
 
