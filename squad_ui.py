@@ -8,7 +8,7 @@ st.set_page_config(page_title="Savage Local Squad", layout="wide")
 st.title("🩸 Savage Local Squad")
 
 # ====================== PATHS ======================
-HOME = "/Users/lenaaoyama"   # ← Change if your username is different
+HOME = "/Users/username"   # ← Change it to the proper username 
 CODER_MODEL = f"{HOME}/qwen-coder-32b"
 CRITIC_MODEL = f"{HOME}/qwen2.5-72b-q4"
 DOCS_FOLDER = f"{HOME}/docs"   # Put your files here
